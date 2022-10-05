@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Животинско цар
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Граничен контрол", "Граничен контрол\Граничен контрол.csproj", "{A3458CC4-2D3F-4213-AABE-F1E8FBE16C75}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Рожден ден", "Рожден ден\Рожден ден.csproj", "{7ADA4AAB-01EB-4B20-A4EC-6236150E6718}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Рожден ден", "Рожден ден\Рожден ден.csproj", "{7ADA4AAB-01EB-4B20-A4EC-6236150E6718}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Недостиг на храна", "Недостиг на храна\Недостиг на храна.csproj", "{035BBCCD-952B-4162-BC5E-2BC1B70C7746}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{7ADA4AAB-01EB-4B20-A4EC-6236150E6718}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7ADA4AAB-01EB-4B20-A4EC-6236150E6718}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7ADA4AAB-01EB-4B20-A4EC-6236150E6718}.Release|Any CPU.Build.0 = Release|Any CPU
+		{035BBCCD-952B-4162-BC5E-2BC1B70C7746}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{035BBCCD-952B-4162-BC5E-2BC1B70C7746}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{035BBCCD-952B-4162-BC5E-2BC1B70C7746}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{035BBCCD-952B-4162-BC5E-2BC1B70C7746}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
