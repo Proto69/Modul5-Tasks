@@ -7,11 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TemplateClasses", "Template
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Телефония", "Телефония\Телефония.csproj", "{F1672AE3-C0D2-4D37-B2B7-4F9CA38A7847}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Работници", "Работници\Работници.csproj", "{F7551A68-00AA-48BC-9280-CB9DCA93C731}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Работници", "Работници\Работници.csproj", "{F7551A68-00AA-48BC-9280-CB9DCA93C731}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Животинско царство", "Животинско царство\Животинско царство.csproj", "{F8787F4E-1996-471A-AACF-EF831798EF54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Животинско царство", "Животинско царство\Животинско царство.csproj", "{F8787F4E-1996-471A-AACF-EF831798EF54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Граничен контрол", "Граничен контрол\Граничен контрол.csproj", "{A3458CC4-2D3F-4213-AABE-F1E8FBE16C75}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Граничен контрол", "Граничен контрол\Граничен контрол.csproj", "{A3458CC4-2D3F-4213-AABE-F1E8FBE16C75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Рожден ден", "Рожден ден\Рожден ден.csproj", "{7ADA4AAB-01EB-4B20-A4EC-6236150E6718}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{A3458CC4-2D3F-4213-AABE-F1E8FBE16C75}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3458CC4-2D3F-4213-AABE-F1E8FBE16C75}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3458CC4-2D3F-4213-AABE-F1E8FBE16C75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7ADA4AAB-01EB-4B20-A4EC-6236150E6718}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7ADA4AAB-01EB-4B20-A4EC-6236150E6718}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7ADA4AAB-01EB-4B20-A4EC-6236150E6718}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7ADA4AAB-01EB-4B20-A4EC-6236150E6718}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
