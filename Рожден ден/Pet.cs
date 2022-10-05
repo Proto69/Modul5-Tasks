@@ -9,14 +9,18 @@ namespace Рожден_ден
 {
     public class Pet : IBirthday
     {
+        public string Name { get; set; }
         public string Birthday { get; }
 
-        public bool CheckYear(string year)
+        public Pet(string name, string birthday)
         {
-            string birthdayYear = Birthday.Substring(Birthday.Length - 4);
-            if (birthdayYear == year)
-                return true;
-            return false;
+            this.Name = name;
+            this.Birthday = birthday;
+        }
+
+        public string GetBirthDay()
+        {
+            return Birthday;
         }
     }
 }

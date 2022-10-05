@@ -10,6 +10,6 @@ namespace Рожден_ден.Interfaces
     {
         string Birthday { get; }
 
-        bool CheckYear(string year);
+        string GetBirthDay();
     }
 }

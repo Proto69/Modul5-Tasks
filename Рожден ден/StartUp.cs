@@ -7,19 +7,23 @@ namespace Рожден_ден
     {
         static void Main()
         {
-            List<IID> list = new();
+            List<IBirthday> list = new();
             List<string> input = new();
             while ((input = Console.ReadLine().Split(" ").ToList())[0] != "End")
             {
-                switch (input.Count)
+                switch (input[0])
                 {
-                    case 3:
-                        Human human = new(input[0], int.Parse(input[1]), long.Parse(input[2]));
+                    case "Citizen":
+                        Human human = new(input[1], int.Parse(input[2]), long.Parse(input[3]), input[4]);
                         list.Add(human);
                         break;
-                    case 2:
-                        Robot robot = new(input[0], long.Parse(input[1]));
+                    case "Robot":
+                        Robot robot = new(input[1], long.Parse(input[2]));
                         list.Add(robot);
+                        break;
+                    case "Pet":
+                        Pet pet = new(input[1], input[2]);
+                        list.Add(pet);
                         break;
                     default:
                         Console.ForegroundColor = ConsoleColor.DarkRed;
@@ -28,15 +32,19 @@ namespace Рожден_ден
                         break;
                 }
             }
-            int key = int.Parse(Console.ReadLine());
-            List<long> invalidIds = new();
+            string key = Console.ReadLine();
+            List<string> invalidBirthDays = new();
             foreach (var user in list)
             {
-                long id = user.ID;
-                if (id % 1000 == key)
-                    invalidIds.Add(user.GetID());
+                if (user.GetType().Name != "Robot")
+                {
+                    string birthDay = user.GetBirthDay();
+                    string birthDayYear = birthDay.Substring(birthDay.Length - 4);
+                    if (birthDayYear == key)
+                        invalidBirthDays.Add(birthDay);
+                }
             }
-            Console.WriteLine(string.Join("\n", invalidIds));
+            Console.WriteLine(string.Join("\n", invalidBirthDays));
         }
     }
 }

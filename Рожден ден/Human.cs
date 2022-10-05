@@ -7,22 +7,29 @@ using Рожден_ден.Interfaces;
 
 namespace Рожден_ден
 {
-    public class Human : IID
+    public class Human : IID, IBirthday
     {
         public string Name { get; }
         public int Age { get; }
         public long ID { get; }
+        public string Birthday { get; }
 
-        public Human(string name, int age, long iD)
+        public Human(string name, int age, long id, string birthday)
         {
             Name = name;
             Age = age;
-            ID = iD;
+            ID = id;
+            this.Birthday = birthday;
         }
 
         public long GetID()
         {
             return ID;
+        }
+
+        public string GetBirthDay()
+        {
+            return Birthday;
         }
     }
 }

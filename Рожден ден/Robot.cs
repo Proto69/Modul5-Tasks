@@ -7,20 +7,27 @@ using Рожден_ден.Interfaces;
 
 namespace Рожден_ден
 {
-    public class Robot : IID
+    public class Robot : IID, IBirthday
     {
         public string Model { get; }
         public long ID { get; }
+        public string Birthday { get; }
 
-        public Robot(string model, long iD)
+        public Robot(string model, long id)
         {
             Model = model;
-            ID = iD;
+            ID = id;
+            this.Birthday = "00/00/0000";
         }
 
         public long GetID()
         {
             return ID;
+        }
+
+        public string GetBirthDay()
+        {
+            return Birthday;
         }
     }
 }
