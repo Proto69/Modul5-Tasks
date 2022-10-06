@@ -7,14 +7,14 @@ using Рожден_ден.Interfaces;
 
 namespace Рожден_ден
 {
-    public class Human : IID, IBirthday
+    public class Citizen : IID, IBirthday
     {
         public string Name { get; }
         public int Age { get; }
         public long ID { get; }
         public string Birthday { get; }
 
-        public Human(string name, int age, long id, string birthday)
+        public Citizen(string name, int age, long id, string birthday)
         {
             Name = name;
             Age = age;
