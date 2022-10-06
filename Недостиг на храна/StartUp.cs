@@ -1,4 +1,5 @@
-﻿using System.Net.Http.Headers;
+﻿using System.Collections.Generic;
+using System.Net.Http.Headers;
 using Недостиг_на_храна.Interfaces;
 
 namespace Недостиг_на_храна
@@ -10,7 +11,7 @@ namespace Недостиг_на_храна
             Dictionary<string, IBuyer> dict = new();
             List<string> input = new();
             int n = int.Parse(Console.ReadLine());
-            for(int i = 0; i < n; i++)
+            for (int i = 0; i < n; i++)
             {
                 input = Console.ReadLine().Split(" ").ToList();
                 switch (input.Count)
@@ -23,10 +24,10 @@ namespace Недостиг_на_храна
                         Rebel rebel = new(input[0], int.Parse(input[1]), input[2]);
                         dict.Add(rebel.Name, rebel);
                         break;
-                    /*Пожелание:
-                     * default:
-                        ErrorShower("Invalid input!");
-                        break;*/
+                        /*Пожелание:
+                         * default:
+                            ErrorShower("Invalid input!");
+                            break;*/
                 }
             }
             string name = "";
