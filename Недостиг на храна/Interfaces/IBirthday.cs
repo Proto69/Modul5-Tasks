@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Рожден_ден.Interfaces
+namespace Недостиг_на_храна.Interfaces
 {
     public interface IBirthday
     {

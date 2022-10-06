@@ -14,7 +14,7 @@ namespace Рожден_ден
                 switch (input[0])
                 {
                     case "Citizen":
-                        Citizen human = new(input[1], int.Parse(input[2]), long.Parse(input[3]), input[4]);
+                        Human human = new(input[1], int.Parse(input[2]), long.Parse(input[3]), input[4]);
                         list.Add(human);
                         break;
                     case "Robot":

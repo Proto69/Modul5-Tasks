@@ -1,50 +1,52 @@
 ﻿using System.Net.Http.Headers;
-using Рожден_ден.Interfaces;
+using Недостиг_на_храна.Interfaces;
 
-namespace Рожден_ден
+namespace Недостиг_на_храна
 {
     public class StartUp
     {
         static void Main()
         {
-            List<IBirthday> list = new();
+            Dictionary<string, IBuyer> dict = new();
             List<string> input = new();
-            while ((input = Console.ReadLine().Split(" ").ToList())[0] != "End")
+            int n = int.Parse(Console.ReadLine());
+            for(int i = 0; i < n; i++)
             {
-                switch (input[0])
+                input = Console.ReadLine().Split(" ").ToList();
+                switch (input.Count)
                 {
-                    case "Citizen":
-                        Citizen human = new(input[1], int.Parse(input[2]), long.Parse(input[3]), input[4]);
-                        list.Add(human);
+                    case 4:
+                        Citizen human = new(input[0], int.Parse(input[1]), long.Parse(input[2]), input[3]);
+                        dict.Add(human.Name, human);
                         break;
-                    case "Robot":
-                        Robot robot = new(input[1], long.Parse(input[2]));
-                        list.Add(robot);
+                    case 3:
+                        Rebel rebel = new(input[0], int.Parse(input[1]), input[2]);
+                        dict.Add(rebel.Name, rebel);
                         break;
-                    case "Pet":
-                        Pet pet = new(input[1], input[2]);
-                        list.Add(pet);
-                        break;
-                    default:
-                        Console.ForegroundColor = ConsoleColor.DarkRed;
-                        Console.WriteLine("Invalid input!");
-                        Console.ForegroundColor = ConsoleColor.White;
-                        break;
+                    /*Пожелание:
+                     * default:
+                        ErrorShower("Invalid input!");
+                        break;*/
                 }
             }
-            string key = Console.ReadLine();
-            List<string> invalidBirthDays = new();
-            foreach (var user in list)
+            string name = "";
+            int allFood = 0;
+            while ((name = Console.ReadLine()) != "End")
             {
-                if (user.GetType().Name != "Robot")
-                {
-                    string birthDay = user.GetBirthDay();
-                    string birthDayYear = birthDay.Substring(birthDay.Length - 4);
-                    if (birthDayYear == key)
-                        invalidBirthDays.Add(birthDay);
-                }
+                if (dict.ContainsKey(name))
+                    allFood += dict[name].BuyFood();
+                //Пожелание:
+                //else
+                //    ErrorShower("Invalid name!");
             }
-            Console.WriteLine(string.Join("\n", invalidBirthDays));
+            Console.WriteLine(allFood);
+        }
+
+        public static void ErrorShower(string error)
+        {
+            Console.ForegroundColor = ConsoleColor.DarkRed;
+            Console.WriteLine(error);
+            Console.ForegroundColor = ConsoleColor.White;
         }
     }
 }

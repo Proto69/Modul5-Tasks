@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Недостиг_на_храна
+namespace Недостиг_на_храна.Interfaces
 {
     public interface IBuyer
     {
         int Food { get; }
 
-        void BuyFood();
+        int BuyFood();
     }
 }

@@ -7,15 +7,24 @@ using Рожден_ден.Interfaces;
 
 namespace Рожден_ден
 {
-    public class Pet : IBirthday
+    public class Citizen : IID, IBirthday
     {
-        public string Name { get; set; }
+        public string Name { get; }
+        public int Age { get; }
+        public long ID { get; }
         public string Birthday { get; }
 
-        public Pet(string name, string birthday)
+        public Citizen(string name, int age, long id, string birthday)
         {
-            this.Name = name;
+            Name = name;
+            Age = age;
+            ID = id;
             this.Birthday = birthday;
+        }
+
+        public long GetID()
+        {
+            return ID;
         }
 
         public string GetBirthDay()
