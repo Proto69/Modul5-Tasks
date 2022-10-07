@@ -26,5 +26,11 @@ namespace Фигури
             double result = 2 * Math.PI * Radius;
             return result;
         }
+
+        public new string Draw()
+        {
+            //Пример мързи ме да го мисля
+            return base.Draw();
+        }
     }
 }

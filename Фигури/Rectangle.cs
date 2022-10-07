@@ -28,5 +28,11 @@ namespace Фигури
             double result = Length * 2 + Wide * 2;
             return result;
         }
+
+        public new string Draw()
+        {
+            //Пример мързи ме да го мисля
+            return base.Draw();
+        }
     }
 }
