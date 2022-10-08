@@ -3,27 +3,27 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04 TemplateClasses", "TemplateClasses\04 TemplateClasses.csproj", "{4AC39289-C6D9-4613-98D5-105C8C32DA92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TemplateClasses", "TemplateClasses\TemplateClasses.csproj", "{4AC39289-C6D9-4613-98D5-105C8C32DA92}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04 Телефония", "Телефония\04 Телефония.csproj", "{F1672AE3-C0D2-4D37-B2B7-4F9CA38A7847}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Телефония", "Телефония\Телефония.csproj", "{F1672AE3-C0D2-4D37-B2B7-4F9CA38A7847}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04 Работници", "Работници\04 Работници.csproj", "{F7551A68-00AA-48BC-9280-CB9DCA93C731}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Работници", "Работници\Работници.csproj", "{F7551A68-00AA-48BC-9280-CB9DCA93C731}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04 Животинско царство", "Животинско царство\04 Животинско царство.csproj", "{F8787F4E-1996-471A-AACF-EF831798EF54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Животинско царство", "Животинско царство\Животинско царство.csproj", "{F8787F4E-1996-471A-AACF-EF831798EF54}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04 Граничен контрол", "Граничен контрол\04 Граничен контрол.csproj", "{A3458CC4-2D3F-4213-AABE-F1E8FBE16C75}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Граничен контрол", "Граничен контрол\Граничен контрол.csproj", "{A3458CC4-2D3F-4213-AABE-F1E8FBE16C75}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04 Рожден ден", "Рожден ден\04 Рожден ден.csproj", "{7ADA4AAB-01EB-4B20-A4EC-6236150E6718}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Рожден ден", "Рожден ден\Рожден ден.csproj", "{7ADA4AAB-01EB-4B20-A4EC-6236150E6718}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04 Недостиг на храна", "Недостиг на храна\04 Недостиг на храна.csproj", "{035BBCCD-952B-4162-BC5E-2BC1B70C7746}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Недостиг на храна", "Недостиг на храна\Недостиг на храна.csproj", "{035BBCCD-952B-4162-BC5E-2BC1B70C7746}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04", "04", "{3DBD6570-447D-4D60-A623-0EA41AFE348D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05 Фигури", "Фигури\05 Фигури.csproj", "{C5B8C07B-8D2F-480F-B140-F67C140BDE68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Фигури", "Фигури\Фигури.csproj", "{C5B8C07B-8D2F-480F-B140-F67C140BDE68}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05", "05", "{1D78F5BE-4859-4E0A-B26F-AF622B068A62}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Животинско царство 2", "Животинско царство 2\Животинско царство 2.csproj", "{53B90690-4FC2-4830-8D33-A20254B9D948}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Животинско царство 2", "Животинско царство 2\Животинско царство 2.csproj", "{53B90690-4FC2-4830-8D33-A20254B9D948}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
