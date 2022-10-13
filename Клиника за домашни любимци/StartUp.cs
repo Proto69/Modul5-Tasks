@@ -4,19 +4,55 @@
     {
         static void Main()
         {
-            Clinic clinic = new(5);
-            Pet pet1 = new("1", 10, "");
-            Pet pet2 = new("2", 10, "");
-            Pet pet3 = new("3", 10, "");
-            Pet pet4 = new("4", 10, "");
-            Pet pet5 = new("5", 10, "");
-            clinic.Add(pet1);
-            clinic.Add(pet2);
-            clinic.Add(pet3);
-            clinic.Add(pet4);
-            clinic.Add(pet5);
-            clinic.Add(pet5);
-            clinic.Add(pet5);
+            int n = int.Parse(Console.ReadLine());
+            Dictionary<string, Pet> pets = new(); 
+            Dictionary<string, Clinic> clinics = new();
+            for (int i = 0; i < n; i++)
+            {
+                List<string> input = Console.ReadLine().Split().ToList();
+                try
+                {
+                    switch (input[0])
+                    {
+                        case "Create":
+                            if (input[1] == "Pet")
+                            {
+                                Pet pet = new(input[2], int.Parse(input[3]), input[4]);
+                                pets.Add(pet.Name, pet);
+                            }
+                            else if (input[1] == "Clinic")
+                            {
+                                Clinic clinic = new(input[2], int.Parse(input[3]));
+                                clinics.Add(clinic.Name, clinic);
+                            }
+                            break;
+                        case "HasEmptyRooms":
+                            Console.WriteLine(clinics[input[1]].HasEmptyRooms());
+                            break;
+                        case "Release":
+                            Console.WriteLine(clinics[input[1]].Release());
+                            break;
+                        case "Add":
+                            Console.WriteLine(clinics[input[2]].Add(pets[input[1]]));
+                            break;
+                        case "Print":
+                            if (input.Count == 2)
+                            {
+                                clinics[input[1]].PrintAllRooms();
+                            }
+                            else
+                            {
+                                clinics[input[1]].PrintRoom(int.Parse(input[2]));
+                            }
+                            break;
+                    }
+                }
+                catch(Exception k)
+                {
+                    Console.WriteLine(k.Message);
+                }
+            }
+
         }
     }
 }

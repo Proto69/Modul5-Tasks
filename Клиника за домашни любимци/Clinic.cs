@@ -8,25 +8,25 @@ namespace Клиника_за_домашни_любимци
 {
     public class Clinic
     {
+        public string Name { get; set; }
         private int rooms;
         private Dictionary<int, Pet> petRooms;
         private int currentRoom;
         private int moves;
+        private bool hasEmpty;
 
-        public Clinic(int rooms)
+        public Clinic(string name, int rooms)
         {
             if (rooms % 2 == 0)
                 throw new ArgumentException("Invalid count of rooms!");
-            petRooms = new();
+            this.Name = name;
+            this.petRooms = new();
             this.rooms = rooms;
-            this.currentRoom = rooms / 2 + 1;
-            moves = 0;
+            Reset();
         }
 
-        public void Add(Pet pet)
+        public bool Add(Pet pet)
         {
-            if (currentRoom == rooms)
-                throw new IndexOutOfRangeException("No more rooms!");
             if (moves % 2 == 0)
             {
                 currentRoom += moves;
@@ -35,26 +35,64 @@ namespace Клиника_за_домашни_любимци
             {
                 currentRoom -= moves;
             }
+            if (currentRoom == rooms + 1)
+                return false;
+            if (currentRoom == rooms)
+                this.hasEmpty = false;
             moves++;
-            petRooms.Add(currentRoom ,pet);
+            if (!petRooms.ContainsKey(currentRoom))
+            {
+                petRooms.Add(currentRoom, pet);
+                return true;
+            }
+            return false;
+            //Console.WriteLine("Added");
         }
-        public void Remove(Pet pet, int room)
+        public bool Release()
         {
-           // petRooms[room].Remove(pet);
+            int room = this.rooms / 2 + 1;
+            Reset();
+            while (true)
+            {
+                if (petRooms.ContainsKey(room))
+                {
+                    petRooms.Remove(room);
+                    return true;
+                }
+                room++;
+                if (room == this.rooms)
+                    room = 1;
+                if (room == this.rooms / 2 + 1)
+                    return false;
+                
+            }
+        }
+        public bool HasEmptyRooms()
+        {
+            return this.hasEmpty;
         }
         public void PrintRoom(int room)
         {
-            /*foreach (var pet in petRooms[room])
-            {
-                Console.WriteLine(pet);
-            }*/
+            if (petRooms.ContainsKey(room))
+                Console.WriteLine(petRooms[room]);
+            else 
+                Console.WriteLine("Room empty");
         }
         public void PrintAllRooms()
         {
-            foreach (var room in petRooms)
+            for (int i = 1; i <= rooms; i++)
             {
-                Console.WriteLine(room);
+                if (petRooms.ContainsKey(i))
+                    Console.WriteLine(petRooms[i]);
+                else
+                    Console.WriteLine("Room empty");
             }
+        }
+        public void Reset()
+        {
+            this.moves = 0;
+            this.currentRoom = this.rooms / 2 + 1;
+            hasEmpty = true;
         }
 
     }

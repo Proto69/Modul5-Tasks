@@ -21,7 +21,7 @@ namespace Клиника_за_домашни_любимци
 
         public override string ToString()
         {
-            return $"{this.Name}: {this.Age}, {this.Type}";
+            return $"{this.Name} {this.Age} {this.Type}";
         }
     }
 }
