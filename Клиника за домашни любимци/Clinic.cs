@@ -13,7 +13,6 @@ namespace Клиника_за_домашни_любимци
         private Dictionary<int, Pet> petRooms;
         private int currentRoom;
         private int moves;
-        private bool hasEmpty;
 
         public Clinic(string name, int rooms)
         {
@@ -27,6 +26,8 @@ namespace Клиника_за_домашни_любимци
 
         public bool Add(Pet pet)
         {
+            if (!HasEmptyRooms())
+                return false;
             if (moves % 2 == 0)
             {
                 currentRoom += moves;
@@ -37,8 +38,6 @@ namespace Клиника_за_домашни_любимци
             }
             if (currentRoom == rooms + 1)
                 return false;
-            if (currentRoom == rooms)
-                this.hasEmpty = false;
             moves++;
             if (!petRooms.ContainsKey(currentRoom))
             {
@@ -46,30 +45,34 @@ namespace Клиника_за_домашни_любимци
                 return true;
             }
             return false;
-            //Console.WriteLine("Added");
         }
         public bool Release()
         {
             int room = this.rooms / 2 + 1;
+            bool result = false;
             Reset();
-            while (true)
+            for(int i = 1; i <= this.rooms; i++)
             {
                 if (petRooms.ContainsKey(room))
                 {
                     petRooms.Remove(room);
-                    return true;
+                    result = true;
+                    break;
                 }
                 room++;
                 if (room == this.rooms)
                     room = 1;
-                if (room == this.rooms / 2 + 1)
-                    return false;
-                
             }
+            return result;
         }
         public bool HasEmptyRooms()
         {
-            return this.hasEmpty;
+            for (int i = 1; i <= rooms; i++)
+            {
+                if (!petRooms.ContainsKey(i))
+                    return true;
+            }
+            return false;
         }
         public void PrintRoom(int room)
         {
@@ -92,7 +95,6 @@ namespace Клиника_за_домашни_любимци
         {
             this.moves = 0;
             this.currentRoom = this.rooms / 2 + 1;
-            hasEmpty = true;
         }
 
     }
