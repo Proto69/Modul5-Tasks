@@ -39,11 +39,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FROG", "FROG\FROG.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Клиника за домашни любимци", "Клиника за домашни любимци\Клиника за домашни любимци.csproj", "{F08665C9-5013-47B6-969D-D7F3A7D743E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Обхождане на свързан списък", "Обхождане на свързан списък\Обхождане на свързан списък.csproj", "{4F624FAE-B90F-4B0B-939C-F8CEB7D464F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Обхождане на свързан списък", "Обхождане на свързан списък\Обхождане на свързан списък.csproj", "{4F624FAE-B90F-4B0B-939C-F8CEB7D464F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Сравняване на обекти", "Сравняване на обекти\Сравняване на обекти.csproj", "{23012DE1-EC39-4BB4-872C-DD15B8B8845F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Сравняване на обекти", "Сравняване на обекти\Сравняване на обекти.csproj", "{23012DE1-EC39-4BB4-872C-DD15B8B8845F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Шаблон Strategy", "Шаблон Strategy\Шаблон Strategy.csproj", "{4F99B936-8213-4320-B20E-D4723AA7F7B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Шаблон Strategy", "Шаблон Strategy\Шаблон Strategy.csproj", "{4F99B936-8213-4320-B20E-D4723AA7F7B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Логика за еднаквост", "Логика за еднаквост\Логика за еднаквост.csproj", "{8C7825BE-3C43-4242-87C6-B77E47F39635}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,6 +125,10 @@ Global
 		{4F99B936-8213-4320-B20E-D4723AA7F7B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F99B936-8213-4320-B20E-D4723AA7F7B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F99B936-8213-4320-B20E-D4723AA7F7B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C7825BE-3C43-4242-87C6-B77E47F39635}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C7825BE-3C43-4242-87C6-B77E47F39635}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C7825BE-3C43-4242-87C6-B77E47F39635}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C7825BE-3C43-4242-87C6-B77E47F39635}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -146,6 +152,7 @@ Global
 		{4F624FAE-B90F-4B0B-939C-F8CEB7D464F1} = {B1A95E34-7D43-4CFC-855B-F35CC0BA51A1}
 		{23012DE1-EC39-4BB4-872C-DD15B8B8845F} = {B1A95E34-7D43-4CFC-855B-F35CC0BA51A1}
 		{4F99B936-8213-4320-B20E-D4723AA7F7B3} = {B1A95E34-7D43-4CFC-855B-F35CC0BA51A1}
+		{8C7825BE-3C43-4242-87C6-B77E47F39635} = {B1A95E34-7D43-4CFC-855B-F35CC0BA51A1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {14255ACD-46D2-407A-9E3A-D7AFFE68B1E8}
