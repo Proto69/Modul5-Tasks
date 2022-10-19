@@ -45,17 +45,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Сравняване на �
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Шаблон Strategy", "Шаблон Strategy\Шаблон Strategy.csproj", "{4F99B936-8213-4320-B20E-D4723AA7F7B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Логика за еднаквост", "Логика за еднаквост\Логика за еднаквост.csproj", "{8C7825BE-3C43-4242-87C6-B77E47F39635}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Логика за еднаквост", "Логика за еднаквост\Логика за еднаквост.csproj", "{8C7825BE-3C43-4242-87C6-B77E47F39635}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "07", "07", "{7A0F1FD0-C24B-4C68-BBF9-A4849DC384E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Func", "Func\Func.csproj", "{56308866-A793-4C7F-99E3-05FD23115EE0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Func", "Func\Func.csproj", "{56308866-A793-4C7F-99E3-05FD23115EE0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08", "08", "{D6578E17-4E44-4EF0-95BC-1FA405E0F2BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Реализация на Събитие", "Реализация на Събитие\Реализация на Събитие.csproj", "{E7982A6E-7E4D-4CE2-ADEE-19BBE8D1620E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Реализация на Събитие", "Реализация на Събитие\Реализация на Събитие.csproj", "{E7982A6E-7E4D-4CE2-ADEE-19BBE8D1620E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Царски гамбит", "Царски гамбит\Царски гамбит.csproj", "{442E7228-7C93-4193-AB1D-DEDE69E68E95}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Царски гамбит", "Царски гамбит\Царски гамбит.csproj", "{442E7228-7C93-4193-AB1D-DEDE69E68E95}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10", "10", "{E32206B1-D2A2-43BE-903B-FF652F92847B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Четене на редове", "Четене на редове\Четене на редове.csproj", "{E9D3AB21-E13F-4425-81CA-33D681080B75}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -151,6 +155,10 @@ Global
 		{442E7228-7C93-4193-AB1D-DEDE69E68E95}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{442E7228-7C93-4193-AB1D-DEDE69E68E95}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{442E7228-7C93-4193-AB1D-DEDE69E68E95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9D3AB21-E13F-4425-81CA-33D681080B75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9D3AB21-E13F-4425-81CA-33D681080B75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9D3AB21-E13F-4425-81CA-33D681080B75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9D3AB21-E13F-4425-81CA-33D681080B75}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -178,6 +186,7 @@ Global
 		{56308866-A793-4C7F-99E3-05FD23115EE0} = {7A0F1FD0-C24B-4C68-BBF9-A4849DC384E7}
 		{E7982A6E-7E4D-4CE2-ADEE-19BBE8D1620E} = {D6578E17-4E44-4EF0-95BC-1FA405E0F2BF}
 		{442E7228-7C93-4193-AB1D-DEDE69E68E95} = {D6578E17-4E44-4EF0-95BC-1FA405E0F2BF}
+		{E9D3AB21-E13F-4425-81CA-33D681080B75} = {E32206B1-D2A2-43BE-903B-FF652F92847B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {14255ACD-46D2-407A-9E3A-D7AFFE68B1E8}
