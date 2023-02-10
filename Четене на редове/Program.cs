@@ -6,11 +6,7 @@
         {
             //Testing
             StreamReader streamReader = new("smth.txt");
-            string? line = streamReader.ReadLine();
-            line = streamReader.ReadLine();
-            line = streamReader.ReadLine();
-            line = streamReader.ReadLine();
-            line = streamReader.ReadLine();
+            string line = streamReader.ReadLine();
             Console.WriteLine(line);
         }
     }

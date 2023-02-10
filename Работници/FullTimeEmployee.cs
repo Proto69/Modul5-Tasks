@@ -25,7 +25,7 @@ namespace Работници
 
         public override double CalculateSalary(int workingHours)
         {
-            double result = 250 + workingHours * 10.80;    
+            double result = 250 + workingHours * 10.80;
             return result;
         }
 

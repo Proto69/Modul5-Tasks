@@ -14,7 +14,7 @@ namespace Реализация_на_Събитие
         public string Name
         {
             get { return name; }
-            set 
+            set
             {
                 name = value;
                 //Стартиране

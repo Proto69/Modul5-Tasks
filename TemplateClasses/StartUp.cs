@@ -1,7 +1,7 @@
-﻿using TemplateClasses.Figures;
+﻿using TemplateClasses.Cars;
 using TemplateClasses.DataStorage;
+using TemplateClasses.Figures;
 using TemplateClasses.Interfaces;
-using TemplateClasses.Cars;
 
 namespace TemplateClasses
 {
@@ -9,7 +9,7 @@ namespace TemplateClasses
     {
         static void Main()
         {
-            
+
         }
     }
 }

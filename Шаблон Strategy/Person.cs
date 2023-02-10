@@ -5,8 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Шаблон_Strategy
-{ 
-    public class Person 
+{
+    public class Person
     {
         public string Name { get; set; }
         public int Age { get; set; }

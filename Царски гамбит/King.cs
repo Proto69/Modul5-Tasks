@@ -12,7 +12,7 @@ namespace Царски_гамбит
         private bool isUnderAttack;
         public bool IsUnderAttack
         {
-            get 
+            get
             {
                 return isUnderAttack;
             }

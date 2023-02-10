@@ -32,7 +32,7 @@
                             break;
                     }
                 }
-                catch(Exception k)
+                catch (Exception k)
                 {
                     Console.WriteLine(k.Message);
                 }

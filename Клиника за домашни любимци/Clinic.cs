@@ -51,7 +51,7 @@ namespace Клиника_за_домашни_любимци
             int room = this.rooms / 2 + 1;
             bool result = false;
             Reset();
-            for(int i = 1; i <= this.rooms; i++)
+            for (int i = 1; i <= this.rooms; i++)
             {
                 if (petRooms.ContainsKey(room))
                 {
@@ -78,7 +78,7 @@ namespace Клиника_за_домашни_любимци
         {
             if (petRooms.ContainsKey(room))
                 Console.WriteLine(petRooms[room]);
-            else 
+            else
                 Console.WriteLine("Room empty");
         }
         public void PrintAllRooms()

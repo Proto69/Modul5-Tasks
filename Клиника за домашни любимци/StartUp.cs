@@ -5,7 +5,7 @@
         static void Main()
         {
             int n = int.Parse(Console.ReadLine());
-            Dictionary<string, Pet> pets = new(); 
+            Dictionary<string, Pet> pets = new();
             Dictionary<string, Clinic> clinics = new();
             for (int i = 0; i < n; i++)
             {
@@ -47,7 +47,7 @@
                             break;
                     }
                 }
-                catch(Exception k)
+                catch (Exception k)
                 {
                     Console.WriteLine(k.Message);
                 }

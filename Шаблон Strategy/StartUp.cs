@@ -8,7 +8,7 @@
             var SortedSetName = new SortedSet<Person>(new NameComparer());
 
             int n = int.Parse(Console.ReadLine());
-            List<string> input = new(); 
+            List<string> input = new();
             for (int i = 0; i < n; i++)
             {
                 input = Console.ReadLine().Split().ToList();

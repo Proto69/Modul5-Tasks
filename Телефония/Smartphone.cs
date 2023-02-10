@@ -23,7 +23,7 @@ namespace Телефония
         {
             if (!number.All(char.IsDigit))
                 Console.WriteLine("Invalid Number");
-            else 
+            else
                 Console.WriteLine($"Calling... {number}"); ;
         }
     }

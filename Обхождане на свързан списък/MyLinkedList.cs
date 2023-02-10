@@ -12,7 +12,7 @@ namespace Обхождане_на_свързан_списък
     public class MyLinkedList<T> : IEnumerable
         where T : IComparable
     {
-        class Node
+        private class Node
         {
             public T Value { get; set; }
             public Node NextNode { get; set; }

@@ -9,7 +9,7 @@
             for (int i = 0; i < n; i++)
             {
                 List<string> input = Console.ReadLine().Split().ToList();
-                switch(input[0])
+                switch (input[0])
                 {
                     case "Add":
                         list.Add(int.Parse(input[1]));

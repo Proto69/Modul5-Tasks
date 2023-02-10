@@ -32,7 +32,7 @@ namespace Превозни_средства
 
         public void Refuel(double liter)
         {
-            this.Fuel += liter ;
+            this.Fuel += liter;
         }
 
         public override string ToString()
