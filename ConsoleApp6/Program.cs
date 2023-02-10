@@ -13,8 +13,10 @@ namespace ConsoleApp6
             {
                 MySqlCommand cmd = new(
                     "INSERT INTO users(username, password)" +
-                    "VALUES (\"Пешо1\", 123456);"
+                    "VALUES (@name, @password);"
                     , conn);
+                cmd.Parameters.AddWithValue("@name", "Pesho");
+                cmd.Parameters.AddWithValue("@password", "123456");
                 cmd.ExecuteNonQuery();
             }
         }
